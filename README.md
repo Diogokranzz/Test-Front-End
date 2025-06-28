@@ -2,7 +2,7 @@
 
 > Projeto desenvolvido para o Teste Front-End.
 
-Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse. O objetivo é implementar uma vitrine de produtos em React e TypeScript, seguindo o layout fornecido no Figma e consumindo dados de uma API em JSON.
+Este projeto foi tem o objetivo é implementar uma vitrine de produtos em React e TypeScript, seguindo o layout fornecido no Figma e consumindo dados de uma API em JSON.
 
 ## Demonstração Online
 
