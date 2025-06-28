@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+# Vitrine Tech
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Projeto desenvolvido para o Teste Front-End da Econverse.
 
-## Available Scripts
+Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Front-End na Econverse. O objetivo é implementar uma vitrine de produtos em React e TypeScript, seguindo o layout fornecido no Figma e consumindo dados de uma API em JSON.
 
-In the project directory, you can run:
+## Demonstração Online
 
-### `npm start`
+> Em breve: [link do deploy aqui]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Especificações Técnicas Atendidas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Projeto desenvolvido em React com TypeScript
+- Consumo de dados via API (com fallback para mock devido a restrições de CORS)
+- Modal de detalhes ao clicar em um produto
+- Estilização utilizando Sass
+- Layout responsivo e fiel ao Figma
+- Sem uso de bibliotecas de UI prontas
+- HTML semântico e boas práticas de SEO
+- Componentização e organização do código
 
-### `npm test`
+## Diferenciais e Extras
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Responsividade total**: layout adaptado para desktop, tablet e mobile
+- **Acessibilidade**: navegação por teclado, ARIA nos componentes interativos, foco gerenciado no modal
+- **SEO aprimorado**: uso de meta tags, headings hierárquicos e alt descritivo nas imagens
+- **Experiência do usuário**: animações suaves, loading amigável, mensagem para categorias vazias
+- **Código limpo**: comentários explicativos, organização e tipagem clara
+- **Pronto para produção**: basta liberar o CORS para consumir a API real
+- **Testes automatizados**: inclui teste básico de renderização de componentes
 
-### `npm run build`
+## Observação sobre a API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O projeto está pronto para consumir a API real da Econverse, porém, devido a restrições de CORS no endpoint, não é possível acessar os dados diretamente do ambiente local. Por isso, utilizei um fallback com dados mockados idênticos ao JSON da API. Caso o CORS seja liberado, a aplicação irá consumir os dados reais automaticamente, sem necessidade de alterações no código.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como rodar o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-### `npm run eject`
+### Instalação
+1. Clone o repositório:
+   ```bash
+   git clone [URL_DO_SEU_REPOSITORIO]
+   cd vitrine-produtos-app
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Execute o projeto:
+   ```bash
+   npm start
+   ```
+4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Estrutura do Projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/          # Componentes React
+│   ├── ProductGrid.tsx  # Vitrine principal
+│   ├── ProductCard.tsx  # Card individual
+│   └── ProductModal.tsx # Modal de detalhes
+├── styles/              # Arquivos SCSS
+├── types/               # Definições TypeScript
+├── data/                # Dados mockados
+└── App.tsx              # Componente principal
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Pontos de Avaliação
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Organização do projeto e dos arquivos
+- Lógica do código e clareza na implementação
+- Componentização e reutilização de código
+- Fidelidade ao layout do Figma
+- Responsividade e usabilidade
+- Boas práticas de SEO e HTML semântico
+- Uso correto do TypeScript
 
-## Learn More
+## Observações Finais
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- O projeto está pronto para consumir a API real, bastando que o CORS seja liberado pelo servidor da Econverse.
+- Todos os requisitos obrigatórios e pontos extras foram implementados.
+- O código está comentado e organizado para facilitar a avaliação.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contato
+
+Em caso de dúvidas, estou à disposição para esclarecimentos.
+
+---
+
+**Desenvolvido para o processo seletivo da Econverse.**
