@@ -6,7 +6,7 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Des
 
 ## Demonstração Online
 
-> Em breve: [link do deploy aqui]
+(https://github.com/Diogokranzz/Test-Front-End)
 
 ## Especificações Técnicas Atendidas
 
